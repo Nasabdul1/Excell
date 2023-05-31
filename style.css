@@ -1,0 +1,505 @@
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    scroll-margin-top: 30px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.intro{
+    height: 100vh;
+    background-color: rgb(243, 238, 238);
+    width: 100%;
+}
+
+nav{
+    position: fixed;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    max-width: 1200px;
+    width: 100%;
+    height: 60px;
+}
+
+nav ul{
+    text-decoration: none;
+    display: flex;
+    gap: 2rem;
+
+}
+
+nav ul a{
+    color: grey;
+}
+
+nav a:hover{
+    color: grey;
+    font-size: large;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 2rem;
+}
+
+span{
+    color: grey;
+}
+
+p{
+    color: grey;
+    font-size: 20px;
+}
+
+.text{
+    margin-top: 190px;
+    padding-left: 3rem;
+}
+
+
+.picture{
+   margin-right: 60px;
+   margin-top: 80px;
+   background-image: url(img/emma.jpg);
+   background-size: cover;
+   background-position: center;
+   height: 400px;
+   width: 400px;
+   border-radius: 360px;
+}
+
+.portfolio{
+    height: 100vh;
+    background-color: rgb(33, 33, 33);
+    width: 100%;
+}
+
+.division{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+
+.writeup{
+    padding: 3rem;
+    background-color: rgb(243, 238, 238);
+}
+
+.writeup h1{
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
+.pastwork{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    gap: 2rem;
+}
+
+.script1{
+    padding: 3rem;
+    background-image: url(img/writing.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.script1 h1{
+    color: white;
+    text-align: center;
+}
+
+.script2{
+    padding: 3rem;
+    background-image: url(img/video.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.script2 h1{
+    color: white;
+    text-align: center;
+}
+
+.script3{
+    padding: 3rem;
+    background-image: url(img/social.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.script3 h1{
+    color: white;
+    text-align: center;
+}
+
+.script4{
+    padding: 3rem;
+    background-image: url(img/jo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.script4 h1{
+    color: white;
+    text-align: center;
+}
+
+.about_page{
+    height: 100vh;
+    /* width: 100%; */
+}
+
+.sip{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    gap: 1rem;
+    height: 100vh;
+}
+
+.write{
+    padding: 3rem;
+    background-color: black;
+}
+
+.write p{
+    font-size: 14px;
+}
+
+.vid{
+    padding: 1rem;
+    background-color: transparent;
+}
+
+.social-links{
+    width: 30px;
+    text-align: center;
+    position: fixed;
+    top : 50%;
+    transform : translateY(-50%);
+    margin-right:0;
+    cursor: pointer;
+    margin: 5px auto;
+}
+
+.pastwork h3{
+    font-size: 10px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-primary{
+    align-items: center;
+    color: aliceblue;
+    background: gray;
+    padding: 10px;
+    border-radius: 10px;
+} 
+
+.vid video{
+    height: 100%;
+    width: 100%;
+}
+
+footer{
+    height: 10px;
+    background-color: transparent;
+}
+
+footer a{
+    color: black;
+    font-size: 10px;
+}
+
+/* -----------------------------------responsive-------------------------------------- */
+ .dropdown_menu a{
+    color: white;
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    border-radius: 10px;
+    align-items: center;
+    /* backdrop-filter: blur(2px); */
+    background-color: rgba(128, 128, 128, 0.384);
+    height: 0px;
+    overflow: hidden;
+}
+
+.dropdown_menu li{
+    width: 200px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.toggle_btn{
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown_menu.open{
+    height: 180px;
+} 
+
+@media(max-width:769px){
+    .dropdown_menu a{
+        color: white;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+    .toggle_btn{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 3rem;
+    }
+
+    .text{
+        margin-top: 70px;
+        padding: 1rem;
+    }
+
+    .text h2{
+        font-size: 18px;
+    }
+    .text p{
+        font-size: 16px;
+    }
+    .picture{
+        height: 265px;
+        width: 265px;
+        margin-top: 5px;
+        margin-left: 30px;
+    }
+    .division{
+        padding: 1rem;
+        gap: 10px;
+        height: 100vh;
+    }
+    .pastwork h1{
+        font-size: 8px;
+    }
+    .pastwork{
+        display: grid;
+        gap: 10px;
+    }
+    .writeup{
+        padding: 30px;
+    }
+    .writeup h1{
+        font-size: 13px;
+    }
+    .sip{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+        gap: 1rem;
+        height: 100vh;
+    }
+    footer h1{
+        text-align: center;
+    }
+    .vid video{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+@media(max-width:426px){
+    .dropdown_menu a{
+        color: white;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+    .toggle_btn{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 3rem;
+    }
+
+    .text{
+        margin-top: 70px;
+        padding: 1rem;
+    }
+
+    .text h2{
+        font-size: 14px;
+    }
+    .text p{
+        font-size: 12px;
+    }
+    .picture{
+        height: 200px;
+        width: 200px;
+        margin-top: 60px;
+        margin-left: 30px;
+    }
+    .division{
+        display: block;
+        height: 100vh;
+        gap: 2rem;
+    }
+    .pastwork h1{
+        font-size: 10px;
+    }
+    .pastwork{
+        margin-top: 2rem;
+        gap: 10px;
+    }
+    .writeup{
+        padding: 10px;
+        height: 130px;
+    }
+    .writeup h1{
+        font-size: 10px;
+    }
+    .sip{
+        display: block;
+        padding: 1rem;
+        gap: 1rem;
+        height: 100vh;
+    }
+    footer h1{
+        text-align: center;
+    }
+    .vid video{
+        height: 100%;
+        width: 100%;
+    }
+    .write p{
+        font-size: 12px;
+    }
+    .write{
+        padding: 1rem;
+    }
+    .dropdown_menu.open{
+        height: 170px;
+    } 
+    .dropdown_menu a{
+        color: white;
+        font-size: 10px;
+    }
+}
+
+@media(max-width:321px){
+    .dropdown_menu a{
+        color: white;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+    .toggle_btn{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem;
+    }
+
+    .text{
+        margin-top: 70px;
+        padding: 1rem;
+    }
+
+    .text h2{
+        font-size: 12px;
+    }
+    .text p{
+        font-size: 10px;
+    }
+    .picture{
+        height: 160px;
+        width: 160px;
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+    .division{
+        display: block;
+        height: 100vh;
+        gap: 1rem;
+    }
+    .pastwork h1{
+        font-size: 10px;
+    }
+    .pastwork{
+        margin-top: 2rem;
+        gap: 10px;
+    }
+    .writeup{
+        padding: 10px;
+        /* height: 1px; */
+    }
+    .writeup h1{
+        font-size: 8px;
+    }
+    .sip{
+        display: block;
+        padding: 1rem;
+        gap: 1rem;
+        height: 100vh;
+    }
+    footer h1{
+        text-align: center;
+    }
+    .vid video{
+        height: 100%;
+        width: 100%;
+    }
+    .write p{
+        font-size: 12px;
+    }
+    .write{
+        padding: 1rem;
+    }
+    .dropdown_menu.open{
+        height: 170px;
+    } 
+    .dropdown_menu a{
+        color: white;
+        font-size: 10px;
+    }
+    .script{
+        height: 140px;
+        width: 140px;
+    }
+}

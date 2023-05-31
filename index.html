@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/579fd210ac.js" crossorigin="anonymous"></script>
+    <title>Excellscript</title>
+</head>
+<body>
+
+<div class="social-links">
+    <a href="https://twitter.com/EScript0523949?t="><i class="fa-brands fa-twitter" style="color: #146aff;"></i></a>
+        <a href="https://wa.me/qr/6RBP6PUTS7PLA1"><i class="fa-brands fa-whatsapp" style="color: #0de739;"></i></a>
+        <a href="https://www.instagram.com/excellscript05?r=nametag"><i class="fa-brands fa-instagram" style="color: #cb2a90;"></i></a>
+        <a href="https://www.facebook.com/tobi.owoeye.336?mibextid=ZbwKwl"><i class="fa-brands fa-facebook" style="color: #3c6dc3;"></i></a>
+</div>
+
+    <section class="intro" id="header">
+        <nav>
+            <h1>ExcellScript</h1>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#potfo">Portfolio</a></li>
+                <li><a href="#display">About</a></li>
+            </ul>
+            <div class="toggle_btn">
+                    <i class="fa-solid fa-bars" style="color: #0c0c0c;"></i>
+            </div>
+        </nav>
+
+                <div class="dropdown_menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about_page">About</a></li>
+                </div>
+
+            <div class="content">
+
+                <div class="text">
+                    <h2>I'm Owoeye Emmanuel <span>Oluwatobi</span></h2>
+                    <p>Welcome to my personal portfolio website</p>
+                </div>
+    
+                <div class="picture">
+                </div>
+            </div>
+    </section>
+    <section class="portfolio" id="potfo">
+                <div class="division">
+    
+                    <div class="writeup">
+                        <h1>Welcome to my scriptwriting portfolio! <br> 
+                            In this collection, you will find a diverse range of scripts showcasing my skills and creativity as a scriptwriter. <br>
+                             Each script is carefully crafted to engage audiences and bring stories to life on screen. <br>
+                              Whether it's for film, television, or other media platforms, I aim to deliver compelling narratives, well-developed characters, and engaging dialogue. <br>
+                               Please explore this portfolio to get a glimpse of my storytelling abilities.
+                        </h1>
+                    </div>
+                    
+                    <div class="pastwork">
+                        <div class="script script1">
+                            <h1>YOUTUBE VIDEO SCRIPTS</h1>
+                            <h3><a href="https://drive.google.com/file/d/1juzoj3uqVGMj0jRwZuCKG54sWi8JVPuV/view?usp=drive_link" class="btn btn-primary" download class="pdf">Download PDF</a></h3>
+                        </div>
+                        <div class=" script script2">
+                            <h1>2D/3D ANIMATED VIDEO SCRIPTS</h1>
+                            <h3><a href="https://drive.google.com/file/d/124mfa472NDgCAmxesVqcM6_DVwpzfiRA/view?usp=drive_link" class="btn btn-primary" download class="pdf">Download PDF</a></h3>
+                        </div>
+                        <div class=" script script3">
+                            <h1>APP/TRAILER VIDEO SCRIPTS</h1>
+                            <h3><a href="https://drive.google.com/file/d/12BG5FpRCJOccNmkl40ohXQc8zgwYJTSc/view?usp=drive_link" class="btn btn-primary" download class="pdf">Download PDF</a></h3>
+                        </div>
+                        <div class=" script script4">
+                            <h1>SCREENPLAY/SCREENWRITING WRITING</h1>
+                            <h3><a href="https://drive.google.com/file/d/195eiWPzGflNG86TJlxM2KngV3WTk7ymQ/view?usp=drive_link" class="btn btn-primary" download class="pdf">Download PDF</a></h3>
+                        </div>          
+                    </div>
+                </div>
+    </section>
+    <section class="about_page" id="display">
+        <div class="sip">
+                <div class="write">
+                    <center><p>Welcome to my About page! <br> <br>
+                         My name is owoeye emmanuel oluwatobi, and I am a professional scriptwriter with a passion for storytelling. 
+
+                        I have always been fascinated by the power of words and the ability to create compelling narratives that captivate audiences. <br>
+                         Over the years, I have honed my craft and developed a unique voice that blends my love of drama, comedy, and action into unforgettable stories.
+                        
+                        As a scriptwriter, I have worked on a variety of projects, including feature films, television shows, and web series. <br>
+                         I take pride in my ability to work collaboratively with directors, producers, and actors to bring their visions to life on the page.
+                    </p></center>
+            </div>
+                <div class="vid">
+                    <video autoplay>
+                        <source src="img/vid.mp4" type="video/mp4">
+                    </video>
+                </div>
+        </div>
+    </section>
+    <!-- <footer>
+        <h1> <a href="https://www.twitter.com/AbdulazeezNasi4">Desinged my Rexmi</a> </h1>
+    </footer> -->
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+    
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+    
+            toggleIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
